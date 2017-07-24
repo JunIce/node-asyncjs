@@ -13,7 +13,7 @@ async.concat(arr , function(item, cb) {
     console.info('catch err: ' + err);  
 });  
 
-async.concat(['aa','bb'], function(i, callback){
+async.concat(['aa','bb'], function(i, callback){ // 并行方式处理
 	setTimeout(function(){
 		callback(null, [i,i]);
 	},100)
